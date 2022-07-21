@@ -1,10 +1,12 @@
-function App() {
+import Header from "./components/Header";
+import MainCard from "./components/MainCard";
 
-  return (
-    <div className="App">
-      
-    </div>
-  )
+function App() {
+    return (
+        <>
+            <MainCard />
+        </>
+    );
 }
 
-export default App
+export default App;

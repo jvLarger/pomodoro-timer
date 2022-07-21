@@ -1,0 +1,43 @@
+.mainCard {
+    width: 90vw;
+    background-color: #fff;
+    height: 75vh;
+    border-radius: 1rem;
+    width: 70vw;
+    box-shadow: rgb(0 0 0 / 14%) 0px 2px 10px;
+    padding: 2rem;
+}
+
+.containerTimers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerTimers > div {
+    width: 800px;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.buttonTab {
+    background-color: whitesmoke;
+    color: #7e52ca;
+    letter-spacing: 0.05em;
+    box-shadow: rgb(0 0 0 / 14%) 0px 2px 10px;
+    all: unset;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 500;
+    height: 35px;
+    border-radius: 4px;
+    padding: 0px 15px;
+    cursor: pointer;
+    background-image: linear-gradient(330deg, hsl(272 51.0% 54.0%) 0%, hsl(226 70.0% 55.5%) 100%);
+    color: #ffff;
+    letter-spacing: 0.05em;
+    box-shadow: rgb(0 0 0 / 14%) 0px 2px 10px;
+}
