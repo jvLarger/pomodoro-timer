@@ -14,16 +14,37 @@ function MainCard() {
             <Header />
             <div className={style.containerTimers}>
                 <div>
-                    <div>
-                        <button className={style.buttonTab} type='button' onClick={() => setIdTabActive('pomodoro')}>Pomodoro</button>
-                        <button className={style.buttonTab} type='button' onClick={() => setIdTabActive('short-break')}>Short Break</button>
-                        <button className={style.buttonTab} type='button' onClick={() => setIdTabActive('long-break')}>Long Break</button>
+                    <div className={style.center}>
+                        
+                        <button
+                            className={style.buttonTab + (idTabActive == "pomodoro" ? " " + style.activeButton : "")}
+                            type='button'
+                            onClick={() => setIdTabActive('pomodoro')}>
+                            Pomodoro
+                        </button>
+
+                        <button
+                            className={style.buttonTab + (idTabActive == "short-break" ? " " + style.activeButton : "")}
+                            type='button'
+                            onClick={() => setIdTabActive('short-break')}>
+                            Short Break
+                        </button>
+
+                        <button
+                            className={style.buttonTab + (idTabActive == "long-break" ? " " + style.activeButton : "")}
+                            type='button'
+                            onClick={() => setIdTabActive('long-break')}>
+                            Long Break
+                        </button>
+
                     </div>
-                    <div>
+                  
+                    <div className={style.containerTimer}>
                         {idTabActive == "pomodoro" ? <Pomodoro /> : ""}
                         {idTabActive == "short-break" ? <ShortBreak /> : ""}
                         {idTabActive == "long-break" ? <LongBreak /> : ""}
                     </div>
+
                 </div>
             </div>
         </div>
